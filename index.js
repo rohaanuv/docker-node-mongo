@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb+srv://admin:pass@docker-node-mongo:27017/user", {
+  .connect("mongodb://root:example@docker-node-mongo:27017/userdb", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
